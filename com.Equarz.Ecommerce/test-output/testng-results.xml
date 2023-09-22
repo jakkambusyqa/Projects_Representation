@@ -2,24 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-14T16:50:57 IST" name="Default suite" finished-at="2023-09-14T16:51:31 IST" duration-ms="34600">
+  <suite started-at="2023-09-22T11:32:36 IST" name="Default suite" finished-at="2023-09-22T11:33:13 IST" duration-ms="36537">
     <groups>
     </groups>
-    <test started-at="2023-09-14T16:50:57 IST" name="Default test" finished-at="2023-09-14T16:51:31 IST" duration-ms="34600">
-      <class name="com.Equarz.Testcases.Addcarttest">
-        <test-method is-config="true" signature="Initialisation()[pri:0, instance:com.Equarz.Testcases.Addcarttest@3e694b3f]" started-at="2023-09-14T16:50:57 IST" name="Initialisation" finished-at="2023-09-14T16:51:24 IST" duration-ms="27859" status="PASS">
+    <test started-at="2023-09-22T11:32:36 IST" name="Default test" finished-at="2023-09-22T11:33:13 IST" duration-ms="36537">
+      <class name="com.Equarz.Testcases.Wishlisttest">
+        <test-method is-config="true" signature="Initialisation()[pri:0, instance:com.Equarz.Testcases.Wishlisttest@41d477ed]" started-at="2023-09-22T11:32:37 IST" name="Initialisation" finished-at="2023-09-22T11:33:02 IST" duration-ms="25347" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Initialisation -->
-        <test-method signature="Bannertest()[pri:2, instance:com.Equarz.Testcases.Addcarttest@3e694b3f]" started-at="2023-09-14T16:51:24 IST" name="Bannertest" finished-at="2023-09-14T16:51:31 IST" duration-ms="6420" status="PASS">
+        <test-method signature="removeWishlist()[pri:0, instance:com.Equarz.Testcases.Wishlisttest@41d477ed]" started-at="2023-09-22T11:33:02 IST" name="removeWishlist" finished-at="2023-09-22T11:33:13 IST" duration-ms="11154" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Bannertest -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:com.Equarz.Testcases.Addcarttest@3e694b3f]" started-at="2023-09-14T16:51:31 IST" name="Teardown" finished-at="2023-09-14T16:51:31 IST" duration-ms="274" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Teardown -->
-      </class> <!-- com.Equarz.Testcases.Addcarttest -->
+        </test-method> <!-- removeWishlist -->
+      </class> <!-- com.Equarz.Testcases.Wishlisttest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
