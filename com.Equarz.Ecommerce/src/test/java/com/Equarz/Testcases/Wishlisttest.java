@@ -63,13 +63,13 @@ import com.base.Testbase;
 		{
 			wish.remove();
 		}
-
-		@AfterMethod
-		public void Teardown()
-		{
-		
-			driver.close();
-		}
+//
+//		@AfterMethod
+//		public void Teardown()
+//		{
+//		
+//			driver.close();
+//		}
 
 	}
 

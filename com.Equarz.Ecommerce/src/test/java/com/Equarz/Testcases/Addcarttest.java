@@ -16,7 +16,7 @@ public class Addcarttest extends Testbase {
 	{
 		super();
 	}
-	@BeforeClass
+	@BeforeMethod
 	public void Initialisation() throws Throwable
 	{
 		Setup();
