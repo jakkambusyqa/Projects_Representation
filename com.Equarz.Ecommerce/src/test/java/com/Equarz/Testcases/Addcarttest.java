@@ -16,7 +16,7 @@ public class Addcarttest extends Testbase {
 	{
 		super();
 	}
-	@BeforeMethod
+	@BeforeClass
 	public void Initialisation() throws Throwable
 	{
 		Setup();
@@ -25,6 +25,12 @@ public class Addcarttest extends Testbase {
 		Add=new AddToCart(driver);
 		
 	}
+	
+//	@BeforeMethod
+//	public void logo()
+//	{
+//		Add.logoclick();
+//	}
 	
 	@Test(priority = 1)
 	public void Categorytest() throws Throwable

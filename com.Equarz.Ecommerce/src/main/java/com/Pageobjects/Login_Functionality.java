@@ -9,6 +9,7 @@ import com.base.Testbase;
 import com.hospiol.pageobjects.Homepage;
 
 public class Login_Functionality extends Testbase {
+	
 	@FindBy(id="si-email")
 	WebElement user;
 	

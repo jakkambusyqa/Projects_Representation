@@ -39,7 +39,7 @@ public class LoginTest extends Testbase {
 	{
 		lf.Verifylogin();
 		String url=driver.getCurrentUrl();
-		assertEquals(url, "http://e-quarz.com/");
+		Assert.assertEquals("http://empirehome.myprojectsonline.co.in/EmpireHome/Dashboard", url);
 	}
 
 

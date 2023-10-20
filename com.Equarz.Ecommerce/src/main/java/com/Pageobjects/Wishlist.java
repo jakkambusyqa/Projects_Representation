@@ -121,7 +121,7 @@ import org.openqa.selenium.WebDriver;
 	    	i=Integer.parseInt(str);
 	    	i=i+1;
 	    	Slide.click();  	
-	    	wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+	    	wait=new WebDriverWait(driver, 10);
 	    	wait.until(ExpectedConditions.elementToBeClickable(banner));
 	    	banner.click();
 	    	Phant.click();

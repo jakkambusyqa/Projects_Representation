@@ -3,6 +3,7 @@ package com.Pageobjects;
 import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebDriver;
@@ -76,7 +77,8 @@ public class AddToCart extends Testbase {
 	@FindBy (xpath ="//a[@href='http://e-quarz.com/product/rts-2-pack-mini-usb-c-type-c-adapter-plug-type-c-female-to-usb-a-male-charger-charging-cable-adapter-converter-compatibl']")
 	  WebElement wishlistproduct;
 	
-
+	@FindBy(xpath = " //a[@class='navbar-brand d-none d-sm-block mr-3 flex-shrink-0 __min-w-7rem']")
+	WebElement logo;
 
 	
 	
@@ -94,7 +96,7 @@ public class AddToCart extends Testbase {
     	Waterbottles.click();
     	Bottle.click();
     	addcart.click();
-    	wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+    	wait=new WebDriverWait(driver, 15);
     	String msg=wait.until(ExpectedConditions.visibilityOf(success)).getText();
     	assertEquals("Successfully added!", msg);
     	return new homepage();
@@ -104,7 +106,7 @@ public class AddToCart extends Testbase {
     	
     	
     	Slide.click();  	
-    	wait=new WebDriverWait(driver, Duration.ofSeconds(10));
+    	wait=new WebDriverWait(driver, 15);
     	wait.until(ExpectedConditions.elementToBeClickable(banner));
     	banner.click();
     	Phant.click();
@@ -119,7 +121,7 @@ public class AddToCart extends Testbase {
 	   footban.click();
 	   Jeans.click();
 	   addcart.click();
-	   wait= new WebDriverWait(driver, Duration.ofSeconds(15));
+	   wait= new WebDriverWait(driver, 15);
 		 String msg=wait.until(ExpectedConditions.visibilityOf(success)).getText();
 	 	assertEquals("Successfully added!", msg);
 	 	return new homepage();
@@ -130,7 +132,7 @@ public class AddToCart extends Testbase {
 		
 		   dealbuy.click();
 		   addcart.click();
-		   wait= new WebDriverWait(driver, Duration.ofSeconds(15));
+		   wait= new WebDriverWait(driver, 15);
 			 String msg=wait.until(ExpectedConditions.visibilityOf(success)).getText();
 		 	assertEquals("Successfully added!", msg);
 		 	return new homepage();
@@ -140,7 +142,7 @@ public class AddToCart extends Testbase {
 		
 		homepageproduct.click();
 		addcart.click();
-		wait= new WebDriverWait(driver, Duration.ofSeconds(15));
+		wait= new WebDriverWait(driver, 15);
 		 String msg=wait.until(ExpectedConditions.visibilityOf(success)).getText();
 	 	assertEquals("Successfully added!", msg);
 	 	return new homepage();
@@ -153,7 +155,7 @@ public class AddToCart extends Testbase {
 		Searchproduct.clear();
 		Thread.sleep(3000);
 		addcart.click();
-		 wait= new WebDriverWait(driver, Duration.ofSeconds(15));
+		 wait= new WebDriverWait(driver, 15);
 		 String msg=wait.until(ExpectedConditions.visibilityOf(success)).getText();
 	 	assertEquals("Successfully added!", msg);
 	 	return new homepage();
@@ -163,10 +165,15 @@ public class AddToCart extends Testbase {
 		wishlist.click();
 		wishlistproduct.click();
 		addcart.click();
-		 wait= new WebDriverWait(driver, Duration.ofSeconds(15));
+		 wait= new WebDriverWait(driver, 15);
 		 String msg=wait.until(ExpectedConditions.visibilityOf(success)).getText();
 	 	assertEquals("Successfully added!", msg);
 	 	return new homepage();
+	}
+    
+    public void logoclick()
+	{
+		logo.click();
 	}
     
 	}

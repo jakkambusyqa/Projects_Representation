@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.Reports.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.Equarz.Testcases.RegTest">
+        <methods>
+          <include name="Givenurl"/>
+          <include name="initialization"/>
+          <include name="Registration" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.Equarz.Testcases.RegTest -->
+      <class name="com.Equarz.Testcases.Homepagelinkstest">
+        <methods>
+          <include name="returnpolicytest"/>
+          <include name="twittertest"/>
+          <include name="logo"/>
+          <include name="start"/>
+        </methods>
+      </class> <!-- com.Equarz.Testcases.Homepagelinkstest -->
+      <class name="com.Equarz.Testcases.LoginTest">
+        <methods>
+          <include name="validatelogin"/>
+          <include name="Initi"/>
+        </methods>
+      </class> <!-- com.Equarz.Testcases.LoginTest -->
+      <class name="com.Equarz.Testcases.Wishlisttest">
+        <methods>
+          <include name="Searchbox_towishlist"/>
+          <include name="Categorytest"/>
+          <include name="Product_dealofday"/>
+          <include name="Bannertest"/>
+          <include name="Hompageproduct"/>
+          <include name="footerbanner"/>
+          <include name="Initialisation"/>
+        </methods>
+      </class> <!-- com.Equarz.Testcases.Wishlisttest -->
+      <class name="com.Equarz.Testcases.Buynowtest">
+        <methods>
+          <include name="Homecartbuynowtest"/>
+          <include name="signin"/>
+        </methods>
+      </class> <!-- com.Equarz.Testcases.Buynowtest -->
+      <class name="com.Equarz.Testcases.Addcarttest">
+        <methods>
+          <include name="Searchbox_toCart"/>
+          <include name="Initialisation"/>
+          <include name="footerbanner"/>
+          <include name="Hompageproduct"/>
+          <include name="wishlist_product"/>
+          <include name="Bannertest"/>
+          <include name="Product_dealofday"/>
+          <include name="Categorytest"/>
+          <include name="Teardown"/>
+        </methods>
+      </class> <!-- com.Equarz.Testcases.Addcarttest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

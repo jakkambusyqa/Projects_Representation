@@ -123,7 +123,7 @@ public class Homepagelinks extends Testbase {
 	
 		returnpolicy.click();
 		String str = driver.getCurrentUrl();
-		assertEquals(str, "http://e-quarz.com/return-policy");
+		assertEquals(str, "http://e-quarz.com/return-poli");
 	}
 
 	public void verifycancellationpolicy() {
@@ -148,7 +148,7 @@ public class Homepagelinks extends Testbase {
 		ut.Windowhandless(window1);
 		str = driver.getCurrentUrl();
 		driver.switchTo().window(window1);
-		assertEquals(str, "https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den-in");
+		assertEquals(str, "https://twitter.com/i/flow/login?redirect_after_login=%2F%3Flang%3Den-");
 	}
 
 	public void verifylinkedin() {

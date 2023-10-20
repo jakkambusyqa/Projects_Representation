@@ -23,9 +23,9 @@ public class Homepagelinkstest extends Testbase {
 		HP = new Homepagelinks(driver);
 		lg.Verifylogin();
 	}
+
 	@BeforeMethod
-	public void logo()
-	{
+	public void logo() {
 		HP.logoclick();
 	}
 

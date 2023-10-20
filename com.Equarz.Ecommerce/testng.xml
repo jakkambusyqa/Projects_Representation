@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	<listeners>
+		<listener class-name="com.Reports.ExtentReporterNG"></listener>
+	</listeners>
+	
+  <test thread-count="5" name="Test">
+    <classes>
+     
+      <class name="com.Equarz.Testcases.Homepagelinkstest"/>
+      <class name="com.Equarz.Testcases.Addcarttest"/>
+      <class name="com.Equarz.Testcases.Buynowtest"/>
+      <class name="com.Equarz.Testcases.LoginTest"/>
+      <class name="com.Equarz.Testcases.RegTest"/>
+  	  <class name="com.Equarz.Testcases.Wishlisttest"/>
+  	  
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Equarz.Testcases.Dropdowntest">
+      <class name="com.Equarz.Testcases.LoginTest">
         <methods>
-          <include name="drop"/>
-          <include name="initialize"/>
-          <include name="logo"/>
+          <include name="validatelogin"/>
+          <include name="Initi"/>
         </methods>
-      </class> <!-- com.Equarz.Testcases.Dropdowntest -->
+      </class> <!-- com.Equarz.Testcases.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

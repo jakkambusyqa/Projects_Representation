@@ -2,8 +2,6 @@ package com.Pageobjects;
 
 import static org.testng.Assert.assertEquals;
 
-import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -93,7 +91,8 @@ public class Buynow extends Testbase {
 		payment.click();
 		Thread.sleep(3000);
 		COD.click();
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+
+		wait = new WebDriverWait(driver, 15);
 		String msg = wait.until(ExpectedConditions.visibilityOf(orderplaced)).getText();
 		assertEquals(msg, "Your order has been placed successfully! !");
 
@@ -111,7 +110,7 @@ public class Buynow extends Testbase {
 		sameadress.click();
 		payment.click();
 		COD.click();
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver, 15);
 		String msg = wait.until(ExpectedConditions.visibilityOf(orderplaced)).getText();
 		assertEquals(msg, "Your order has been placed successfully! !");
 
@@ -127,7 +126,7 @@ public class Buynow extends Testbase {
 		payment.click();
 		Thread.sleep(3000);
 		COD.click();
-		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		wait = new WebDriverWait(driver, 15);
 		String msg = wait.until(ExpectedConditions.visibilityOf(orderplaced)).getText();
 		assertEquals(msg, "Your order has been placed successfully! !");
 
